@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  #colorChangeDiv {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+  }
+</style>
+</head>
+<body>
+
+<div id="colorChangeDiv" onmouseover="changeColor()"></div>
+
+<script>
+function changeColor() {
+  var divElement = document.getElementById("colorChangeDiv");
+  divElement.style.backgroundColor = "red";
+}
+</script>
+
+</body>
+</html>
