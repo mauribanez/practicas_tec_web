@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  #counter {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  #incrementButton {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<p id="counter">0</p>
+<button id="incrementButton" onclick="incrementCounter()">Incrementar</button>
+
+<script>
+var counter = 0;
+var counterElement = document.getElementById("counter");
+
+function incrementCounter() {
+  counter++;
+  counterElement.textContent = counter;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  input[type="text"], input[type="email"], input[type="password"] {
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 100%;
+  }
+  
+  input[type="submit"] {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<form onsubmit="return validateForm()">
+  <input type="text" id="name" placeholder="Nombre">
+  <input type="email" id="email" placeholder="Correo Electrónico">
+  <input type="password" id="password" placeholder="Contraseña">
+  <input type="submit" value="Enviar">
+</form>
+
+<script>
+function validateForm() {
+  var email = document.getElementById("email").value;
+  var password = document.getElementById("password").value;
+
+  if (email.indexOf("@") === -1) {
+    alert("Correo electrónico inválido.");
+    return false;
+  }
+
+  if (password.length < 8) {
+    alert("La contraseña debe tener al menos 8 caracteres.");
+    return false;
+  }
+
+  return true;
+}
+</script>
+
+</body>
+</html>

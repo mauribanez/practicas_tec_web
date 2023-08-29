@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    display: inline;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  
+  .submenu {
+    display: none;
+  }
+</style>
+</head>
+<body>
+
+<ul>
+  <li onclick="toggleSubMenu(1)">Inicio
+    <ul class="submenu">
+      <li>Subitem 1</li>
+      <li>Subitem 2</li>
+    </ul>
+  </li>
+  <li onclick="toggleSubMenu(2)">Productos
+    <ul class="submenu">
+      <li>Producto 1</li>
+      <li>Producto 2</li>
+    </ul>
+  </li>
+  <li>Contacto</li>
+</ul>
+
+<script>
+function toggleSubMenu(index) {
+  var submenu = document.getElementsByClassName("submenu")[index - 1];
+  submenu.style.display = submenu.style.display === "block" ? "none" : "block";
+}
+</script>
+
+</body>
+</html>
