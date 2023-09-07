@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Carrusel de Imágenes</title>
+  <!-- Agrega los enlaces a las bibliotecas de Bootstrap y jQuery -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+    /* Establece el tamaño deseado para todas las imágenes del carrusel */
+    .carousel-inner img {
+      width: 100%;
+      height: 500px; /* Ajusta la altura según tus necesidades */
+    }
+  </style>
+</head>
+<body>
+
+<div class="container mt-5">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicadores de posición -->
+    <ul class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+    </ul>
+
+    <!-- Imágenes del carrusel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://www.recreoviral.com/wp-content/uploads/2016/04/capibara-10.jpg" alt="Imagen 1">
+      </div>
+      <div class="carousel-item">
+        <img src="https://misanimales.com/wp-content/uploads/2017/11/nutrias.jpg" alt="Imagen 2">
+      </div>
+      <div class="carousel-item">
+        <img src="https://www.animales.website/wp-content/uploads/2016/07/La-marmota.jpg" alt="Imagen 3">
+      </div>
+      <div class="carousel-item">
+        <img src="https://www.elespectador.com/resizer/POAHTxwbLHpwxV0Vw7ASaanrikc=/1200x675/filters:quality(60):format(jpeg)/cloudfront-us-east-1.images.arcpublishing.com/elespectador/WZGYIA6WPZBZRFXL6DV4WUJEFM.jpg" alt="Imagen 4">
+      </div>
+      <div class="carousel-item">
+        <img src="https://estaticosgn-cdn.deia.eus/clip/8a149c15-c62a-462b-a456-0bc391272e58_16-9-discover-aspect-ratio_default_0.jpg" alt="Imagen 5">
+      </div>
+    </div>
+
+    <!-- Controles del carrusel -->
+    <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+</div>
+
+</body>
+</html>

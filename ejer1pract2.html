@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Botón desplegable</title>
+  <!-- Agrega los enlaces a las bibliotecas de Bootstrap y jQuery -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Agrega una clase CSS personalizada para cambiar el color del botón a naranja -->
+  <style>
+    .btn-orange {
+      background-color: rgb(255, 81, 0);
+      border-color: rgb(255, 81, 0);
+      color: black;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container mt-5">
+  <div class="dropdown">
+    <!-- Agrega la clase "btn-orange" al botón para cambiar el color -->
+    <button type="button" class="btn btn-primary dropdown-toggle btn-orange" data-toggle="dropdown">
+      Opciones
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#" id="opcion1">Opción 1</a>
+      <a class="dropdown-item" href="#" id="opcion2">Opción 2</a>
+      <a class="dropdown-item" href="#" id="opcion3">Opción 3</a>
+    </div>
+  </div>
+</div>
+
+<script>
+$(document).ready(function(){
+  $("#opcion1").click(function(){
+    alert("Seleccionaste la opción 1");
+  });
+  $("#opcion2").click(function(){
+    alert("Seleccionaste la opción 2");
+  });
+  $("#opcion3").click(function(){
+    alert("Seleccionaste la opción 3");
+  });
+});
+</script>
+
+</body>
+</html>
+
